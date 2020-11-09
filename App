@@ -1,0 +1,30 @@
+<template>
+  <div id="app">
+    <ThirdLogin/>
+    <BgImg/>
+  </div>
+</template>
+
+<script>
+import ThirdLogin from './views/ThridLogin.vue';
+import bgImg from './assets/bg.jpg'
+
+export default {
+  name: 'App',
+  components: {
+    ThirdLogin,
+    bgImg
+  },
+  data() {
+    return {
+      bgImg:require('./assets/bg.jpg')
+    }
+  }
+}
+</script>
+
+<style>
+#app {
+  margin-top: 150px;
+}
+</style>
